@@ -3,7 +3,6 @@ using UnityEngine;
 public class FollowInteraction : MonoBehaviour
 {
     public float interactionDistance = 2f;
-    private FollowLeader lastMemberInQueue;
 
     void Update()
     {
@@ -19,19 +18,11 @@ public class FollowInteraction : MonoBehaviour
             {
                 if (collider.CompareTag("Member"))
                 {
+                    
                     FollowLeader followLeader = collider.GetComponent<FollowLeader>();
                     if (followLeader != null)
                     {
-                        if (lastMemberInQueue != null)
-                        {
-                            followLeader.StartFollowing(lastMemberInQueue.transform);
-                        }
-                        else
-                        {
-                            followLeader.StartFollowing(transform);
-                        }
-                        
-                        lastMemberInQueue = followLeader;
+                        followLeader.StartFollowing(transform);
                     }
                 }
             }

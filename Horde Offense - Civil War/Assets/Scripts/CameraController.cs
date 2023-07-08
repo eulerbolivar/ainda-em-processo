@@ -70,8 +70,8 @@ public class CameraController : MonoBehaviour
     }
 
     public float minFOV = 10f;
-    public float maxFOV = 90f;
-    [SerializeField] public float cameraSensibility = 25f;
+    public float maxFOV = 60f;
+    [SerializeField] public float cameraSensibility = 20f;
     void cameraZoom()
     {
         float mouseScroll = Input.GetAxis("Mouse ScrollWheel");
