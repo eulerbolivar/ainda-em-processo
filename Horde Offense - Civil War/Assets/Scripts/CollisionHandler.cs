@@ -6,6 +6,13 @@ public class CollisionHandler : MonoBehaviour
 {
     public bool isGrounded = false;
 
+    private LifeManager lifeManager;
+
+    private void Start()
+    {
+        lifeManager = GetComponent<LifeManager>();
+    }
+
     void OnCollisionEnter(Collision other) 
     {
             if (other.gameObject.tag == "SpeedBoost")
@@ -15,11 +22,18 @@ public class CollisionHandler : MonoBehaviour
                 movement.moveSpeed += 2f;
             }
 
-            if (other.gameObject.tag == "Ground")
+            if (other.gameObject.tag == "Obstacle")
+            {
+                lifeManager.changeLife(other.gameObject.GetComponent<Obstacle>().getDamage());
+
+            }
+
+        if (other.gameObject.tag == "Ground")
             {
                 isGrounded = true;
             }
     }
+
 
     void OnCollisionExit(Collision other)
     {
