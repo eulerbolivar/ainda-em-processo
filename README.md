@@ -1,5 +1,4 @@
-# Nome do Jogo
-![testgithub](https://github.com/eulerbolivar/ainda-em-processo/assets/96848490/a6dcfac1-9b80-4a28-a8b1-c8bffeacf1fd)
+# Horde Offense: Civil War
 
 ## 📌 Índice
 
@@ -11,7 +10,9 @@
 
 <a name="visao-geral"></a>
 ## ✔️ Visão Geral 
-Esse jogo será desenvolvido durante a [GMTK Game Jam 2023](https://itch.io/jam/gmtk-2023)
+Esse jogo será desenvolvido durante a [GMTK Game Jam 2023](https://itch.io/jam/gmtk-2023) dentro do tema *Roles Reversed*.
+
+A proposta principal do nosso jogo, será o desenvolvimento de um *"Tower Defense"* em que o jogador controla as hordas de personagens até um ponto final, enquanto soluciona *puzzles* e se defende das torres. A ambientação do jogo será em um cenário de guerra civil, onde o personagem principal, se reúne com outros personagens para alcançar o objetivo de finalizar o trajeto.
 
 <a name="ferramentas"></a>
 ## 🛠 Ferramentas
@@ -19,10 +20,12 @@ Esse jogo será desenvolvido durante a [GMTK Game Jam 2023](https://itch.io/jam/
 As ferramentas utilizadas para a construção desse projeto foram:
 - Unity
 - FL Studio
-- Aseprite
 
 <a name="artes"></a>
-## 🎨 Artes  
+## 🎨 Artes
+Todos os modelos 3D utilizados na construção deste jogo foram coletados diretamente pela Unity Asset Store, sendo os seguintes Assets:
+- [Link do Asset](#Link)
+- ...
 
 <a name="musicas"></a>
 ## 🎵 Músicas e SFX
@@ -31,9 +34,9 @@ Todas as músicas e efeitos sonoros presentes nesse jogos estarão contidas ness
 <a name="colaboradores"></a>
 ## 👨‍💻 Colaboradores
 [Euler Oliveira](https://github.com/eulerbolivar)
-- Code, 2D Art, Music e SFX.
+- Code, Music e SFX.
 
 Gino Carlo
-- Code 
+- Code, Game Design.
 
 
