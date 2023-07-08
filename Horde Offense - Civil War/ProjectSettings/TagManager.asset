@@ -9,6 +9,7 @@ TagManager:
   - Obstacle
   - Torreta
   - Coin
+  - Member
   layers:
   - Default
   - TransparentFX
