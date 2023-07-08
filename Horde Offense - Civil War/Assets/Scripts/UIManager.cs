@@ -7,6 +7,7 @@ using TMPro;
 public class UIManager : MonoBehaviour
 {
     [SerializeField] private TMP_Text lifeText;
+    [SerializeField] private TMP_Text cointText;
 
     public static UIManager instance;
 
@@ -18,5 +19,10 @@ public class UIManager : MonoBehaviour
     public void setLifeText(string text)
     {
         lifeText.text = text;
+    }
+
+    public void setCoinText(string text)
+    {
+        cointText.text = text;
     }
 }

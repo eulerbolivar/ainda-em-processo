@@ -6,15 +6,9 @@ public class LifeManager : MonoBehaviour
 {
     [SerializeField] int life;
 
-    void Start()
+    private void Start()
     {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        UIManager.instance.setLifeText("Life: " + life);
     }
 
     public void changeLife(int upLife)
