@@ -7,6 +7,7 @@ TagManager:
   - SpeedBoost
   - Ground
   - Obstacle
+  - Torreta
   layers:
   - Default
   - TransparentFX
