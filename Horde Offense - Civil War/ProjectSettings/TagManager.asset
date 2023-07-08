@@ -7,6 +7,8 @@ TagManager:
   - SpeedBoost
   - Ground
   - Obstacle
+  - Member
+  - Enemy
   layers:
   - Default
   - TransparentFX
