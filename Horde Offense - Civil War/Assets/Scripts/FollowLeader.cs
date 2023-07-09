@@ -1,16 +1,16 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class FollowLeader : MonoBehaviour
 {
     private Transform targetFollowed;
-    public float followSpeed = 9f;
-    public float stoppingDistance = 2f;
+    [SerializeField] private float followSpeed = 12f;
+    private float stoppingDistance = 2f;
 
-    public void StartFollowing(Transform targetPlayer)
+    public void StartFollowing(Transform targetPlayer, float distanceOffset)
     {
         targetFollowed = targetPlayer;
+        Vector3 offset = new Vector3(0f, 0f, -distanceOffset);
+        transform.position = targetFollowed.position + offset;
     }
 
     private void Update()
@@ -22,9 +22,7 @@ public class FollowLeader : MonoBehaviour
     {
         if (targetFollowed != null)
         {
-        
             Vector3 direction = (targetFollowed.position - transform.position).normalized;
-
             float distanceBetweenPlayer = Vector3.Distance(transform.position, targetFollowed.position);
 
             if (distanceBetweenPlayer > stoppingDistance)
